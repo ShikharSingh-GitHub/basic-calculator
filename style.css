@@ -1,0 +1,80 @@
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    margin:10px;
+    background-color: hsla(208, 100%, 97%, 0.806);
+}
+
+#calculator{
+    max-width: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    border-radius: 15px;
+    overflow:hidden;
+}
+
+#display{
+    width:100%;
+    padding:20px;
+    font-size:3rem;
+    text-align: left;
+    border:none;
+    background-color: rgba(242, 242, 247, 0.685);
+    color:aliceblue;
+}
+
+
+#btns{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding:25px;
+    gap:10px;
+}  
+        
+button{
+    height:100px;
+    width:100px;
+    border-radius:50px;
+    border:none;
+    background-color: grey;
+    color:azure;
+    font-size:1.5rem;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: rgb(196, 194, 194);
+
+}
+
+button:active{
+    background-color: rgb(216, 215, 215);
+
+}
+
+.operatorBtn{
+    background-color: orange;
+}
+
+.operatorBtn:hover{
+    background-color: rgb(245, 182, 64);
+}
+
+.operatorBtn:active{
+    background-color: rgb(245, 196, 105);
+}
+
+.equalToBtn{
+    background-color: rgb(47, 6, 247);
+}
+
+.equalToBtn:hover{
+    background-color: rgb(64, 64, 245);
+}
+
+.equalToBtn:active{
+    background-color: rgb(136, 122, 242);
+}
